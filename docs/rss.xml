@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VRAMCalcIndex Local LLM Hardware Database</title>
+    <link>https://hanifsalman11.github.io/llm-vram-index/</link>
+    <description>Interactive Local LLM VRAM, GGUF Quantization & GPU Calculators</description>
+    <atom:link href="https://hanifsalman11.github.io/llm-vram-index/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
+    <item>
+      <title>Qwen 2.5 Coder 32B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/qwen-25-coder-32b-instruct-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/qwen-25-coder-32b-instruct-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Qwen 2.5 Coder 32B Instruct (32.5B) in FP16 (67.2GB), Q8_0 (36.9GB), and Q4_K_M (21.6GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>DeepSeek R1 Distill Qwen 32B VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/deepseek-r1-distill-qwen-32b-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/deepseek-r1-distill-qwen-32b-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run DeepSeek R1 Distill Qwen 32B (32.8B) in FP16 (67.8GB), Q8_0 (37.2GB), and Q4_K_M (21.8GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>Llama 3.3 70B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/llama-33-70b-instruct-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/llama-33-70b-instruct-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Llama 3.3 70B Instruct (70.6B) in FP16 (143.4GB), Q8_0 (78.0GB), and Q4_K_M (45.3GB) with Ollama or llama.cpp.</description>
+    </item>
+  </channel>
+</rss>

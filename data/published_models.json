@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "model_name": "Llama 3.3 70B Instruct",
+    "slug": "llama-33-70b-instruct-vram-requirements-calculator",
+    "title": "Llama 3.3 70B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Llama 3.3 70B Instruct (70.6B) in FP16 (143.4GB), Q8_0 (78.0GB), and Q4_K_M (45.3GB) with Ollama or llama.cpp.",
+    "params_b": 70.6,
+    "vram_q4": 45.3,
+    "date": "2026-10-22"
+  },
+  {
+    "model_name": "DeepSeek R1 Distill Qwen 32B",
+    "slug": "deepseek-r1-distill-qwen-32b-vram-requirements-calculator",
+    "title": "DeepSeek R1 Distill Qwen 32B VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run DeepSeek R1 Distill Qwen 32B (32.8B) in FP16 (67.8GB), Q8_0 (37.2GB), and Q4_K_M (21.8GB) with Ollama or llama.cpp.",
+    "params_b": 32.8,
+    "vram_q4": 21.8,
+    "date": "2026-10-22"
+  },
+  {
+    "model_name": "Qwen 2.5 Coder 32B Instruct",
+    "slug": "qwen-25-coder-32b-instruct-vram-requirements-calculator",
+    "title": "Qwen 2.5 Coder 32B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Qwen 2.5 Coder 32B Instruct (32.5B) in FP16 (67.2GB), Q8_0 (36.9GB), and Q4_K_M (21.6GB) with Ollama or llama.cpp.",
+    "params_b": 32.5,
+    "vram_q4": 21.6,
+    "date": "2026-10-22"
+  }
+]

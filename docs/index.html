@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VRAMCalcIndex — Local LLM VRAM, GGUF Quantization & GPU Sizing Calculator (2026)</title>
+  <meta name="description" content="Calculate exact GPU VRAM, Apple Unified Memory, and tokens/sec for Llama 3.3, DeepSeek R1, Qwen 2.5, Mistral, and Gemma models.">
+  <link rel="canonical" href="https://hanifsalman11.github.io/llm-vram-index/">
+  <link rel="alternate" type="application/rss+xml" title="VRAMCalcIndex RSS Feed" href="https://hanifsalman11.github.io/llm-vram-index/rss.xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 min-h-screen flex flex-col">
+  <header class="border-b border-neutral-800 bg-neutral-900/80 sticky top-0 z-30 backdrop-blur">
+    <div class="max-w-5xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <div class="text-lg font-black text-white flex items-center gap-2">
+        <span class="bg-lime-500 text-neutral-950 px-2 py-0.5 rounded font-black">VRAM</span>CalcIndex
+      </div>
+      <a href="https://www.amazon.com/s?k=NVIDIA%2BGeForce%2BRTX%2B4090%2B5090%2B24GB%2B32GB%2BGraphics%2BCard&tag=salmanreview04-20" target="_blank" rel="nofollow sponsored" class="text-xs sm:text-sm bg-lime-500 hover:bg-lime-400 text-neutral-950 font-extrabold px-3.5 py-2 rounded-lg transition">
+        Shop Local AI GPUs & Workstations on Amazon →
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-12 flex-1 w-full">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <h1 class="text-3xl sm:text-5xl font-black text-white tracking-tight">Local LLM VRAM & GPU Hardware Sizing Database</h1>
+      <p class="text-neutral-400 mt-3 text-base sm:text-lg">Select any open-weights AI model below to calculate exact FP16, Q8_0, and Q4_K_M VRAM requirements, KV-cache overhead, and tokens/sec across NVIDIA RTX and Apple Silicon.</p>
+      <div class="mt-6">
+        <input id="filterInput" type="text" placeholder="Filter AI model (e.g. Llama 3.3 70B, DeepSeek R1, Qwen 2.5 Coder, Mistral, 24GB VRAM...)" class="w-full bg-neutral-900 border border-neutral-700 rounded-xl px-4 py-3.5 text-sm text-white focus:outline-none focus:border-lime-500">
+      </div>
+    </div>
+
+    <div id="modelGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <a href="qwen-25-coder-32b-instruct-vram-requirements-calculator.html" class="block bg-neutral-900 border border-neutral-800 hover:border-lime-500/60 rounded-xl p-5 transition group">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-black uppercase bg-lime-500 text-neutral-950 px-2.5 py-0.5 rounded">Q4_K_M: 21.6 GB VRAM</span>
+            <span class="text-xs text-neutral-400">32.5B Params</span>
+          </div>
+          <h2 class="text-base font-bold text-white group-hover:text-lime-400 transition">Qwen 2.5 Coder 32B Instruct VRAM & GPU Calculator</h2>
+          <p class="text-xs text-neutral-400 mt-2 line-clamp-2">Calculate exact GPU VRAM and Unified Memory needed to run Qwen 2.5 Coder 32B Instruct (32.5B) in FP16 (67.2GB), Q8_0 (36.9GB), and Q4_K_M (21.6GB) with Ollama or llama.cpp.</p>
+          <span class="inline-block mt-4 text-xs font-extrabold text-lime-400">Calculate Quantization & Token Speed →</span>
+        </a>
+        <a href="deepseek-r1-distill-qwen-32b-vram-requirements-calculator.html" class="block bg-neutral-900 border border-neutral-800 hover:border-lime-500/60 rounded-xl p-5 transition group">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-black uppercase bg-lime-500 text-neutral-950 px-2.5 py-0.5 rounded">Q4_K_M: 21.8 GB VRAM</span>
+            <span class="text-xs text-neutral-400">32.8B Params</span>
+          </div>
+          <h2 class="text-base font-bold text-white group-hover:text-lime-400 transition">DeepSeek R1 Distill Qwen 32B VRAM & GPU Calculator</h2>
+          <p class="text-xs text-neutral-400 mt-2 line-clamp-2">Calculate exact GPU VRAM and Unified Memory needed to run DeepSeek R1 Distill Qwen 32B (32.8B) in FP16 (67.8GB), Q8_0 (37.2GB), and Q4_K_M (21.8GB) with Ollama or llama.cpp.</p>
+          <span class="inline-block mt-4 text-xs font-extrabold text-lime-400">Calculate Quantization & Token Speed →</span>
+        </a>
+        <a href="llama-33-70b-instruct-vram-requirements-calculator.html" class="block bg-neutral-900 border border-neutral-800 hover:border-lime-500/60 rounded-xl p-5 transition group">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-black uppercase bg-lime-500 text-neutral-950 px-2.5 py-0.5 rounded">Q4_K_M: 45.3 GB VRAM</span>
+            <span class="text-xs text-neutral-400">70.6B Params</span>
+          </div>
+          <h2 class="text-base font-bold text-white group-hover:text-lime-400 transition">Llama 3.3 70B Instruct VRAM & GPU Calculator</h2>
+          <p class="text-xs text-neutral-400 mt-2 line-clamp-2">Calculate exact GPU VRAM and Unified Memory needed to run Llama 3.3 70B Instruct (70.6B) in FP16 (143.4GB), Q8_0 (78.0GB), and Q4_K_M (45.3GB) with Ollama or llama.cpp.</p>
+          <span class="inline-block mt-4 text-xs font-extrabold text-lime-400">Calculate Quantization & Token Speed →</span>
+        </a></div>
+  </main>
+
+  <footer class="border-t border-neutral-800 py-8 text-center text-xs text-neutral-500">
+    <p>© 2026 VRAMCalcIndex. As an Amazon Associate, we earn from qualifying purchases.</p>
+  </footer>
+
+  <script>
+    const filterInput = document.getElementById('filterInput');
+    const cards = Array.from(document.getElementById('modelGrid').children);
+    filterInput.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase();
+      cards.forEach(c => {
+        c.style.display = c.textContent.toLowerCase().includes(q) ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
