@@ -52,5 +52,32 @@
     "params_b": 72.7,
     "vram_q4": 46.6,
     "date": "2026-10-23"
+  },
+  {
+    "model_name": "Gemma 2 27B IT",
+    "slug": "gemma-2-27b-it-vram-requirements-calculator",
+    "title": "Gemma 2 27B IT VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Gemma 2 27B IT (27.2B) in FP16 (56.6GB), Q8_0 (31.2GB), and Q4_K_M (18.4GB) with Ollama or llama.cpp.",
+    "params_b": 27.2,
+    "vram_q4": 18.4,
+    "date": "2026-10-23"
+  },
+  {
+    "model_name": "Llama 3.1 8B Instruct",
+    "slug": "llama-31-8b-instruct-vram-requirements-calculator",
+    "title": "Llama 3.1 8B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Llama 3.1 8B Instruct (8.0B) in FP16 (18.2GB), Q8_0 (10.4GB), and Q4_K_M (6.5GB) with Ollama or llama.cpp.",
+    "params_b": 8.0,
+    "vram_q4": 6.5,
+    "date": "2026-10-23"
+  },
+  {
+    "model_name": "Mistral Small 3 24B Instruct",
+    "slug": "mistral-small-3-24b-instruct-vram-requirements-calculator",
+    "title": "Mistral Small 3 24B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Mistral Small 3 24B Instruct (24.0B) in FP16 (50.2GB), Q8_0 (27.7GB), and Q4_K_M (16.4GB) with Ollama or llama.cpp.",
+    "params_b": 24.0,
+    "vram_q4": 16.4,
+    "date": "2026-10-23"
   }
 ]

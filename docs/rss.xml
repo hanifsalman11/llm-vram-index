@@ -7,6 +7,24 @@
     <atom:link href="https://hanifsalman11.github.io/llm-vram-index/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
     <item>
+      <title>Mistral Small 3 24B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/mistral-small-3-24b-instruct-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/mistral-small-3-24b-instruct-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Mistral Small 3 24B Instruct (24.0B) in FP16 (50.2GB), Q8_0 (27.7GB), and Q4_K_M (16.4GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>Llama 3.1 8B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/llama-31-8b-instruct-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/llama-31-8b-instruct-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Llama 3.1 8B Instruct (8.0B) in FP16 (18.2GB), Q8_0 (10.4GB), and Q4_K_M (6.5GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>Gemma 2 27B IT VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/gemma-2-27b-it-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/gemma-2-27b-it-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Gemma 2 27B IT (27.2B) in FP16 (56.6GB), Q8_0 (31.2GB), and Q4_K_M (18.4GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
       <title>Qwen 2.5 72B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
       <link>https://hanifsalman11.github.io/llm-vram-index/qwen-25-72b-instruct-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/qwen-25-72b-instruct-vram-requirements-calculator.html</guid>
