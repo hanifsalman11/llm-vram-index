@@ -7,6 +7,24 @@
     <atom:link href="https://hanifsalman11.github.io/llm-vram-index/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
     <item>
+      <title>Command R+ 104B (08-2024) VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/command-r-104b-08-2024-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/command-r-104b-08-2024-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Command R+ 104B (08-2024) (104.0B) in FP16 (210.2GB), Q8_0 (114.1GB), and Q4_K_M (66.0GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>Phi-4 14B Reasoning VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/phi-4-14b-reasoning-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/phi-4-14b-reasoning-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Phi-4 14B Reasoning (14.0B) in FP16 (30.2GB), Q8_0 (16.9GB), and Q4_K_M (10.2GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>Qwen 2.5 14B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/qwen-25-14b-instruct-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/qwen-25-14b-instruct-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Qwen 2.5 14B Instruct (14.7B) in FP16 (31.6GB), Q8_0 (17.7GB), and Q4_K_M (10.6GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
       <title>Mistral Small 3 24B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
       <link>https://hanifsalman11.github.io/llm-vram-index/mistral-small-3-24b-instruct-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/mistral-small-3-24b-instruct-vram-requirements-calculator.html</guid>
