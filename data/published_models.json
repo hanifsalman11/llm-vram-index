@@ -25,5 +25,32 @@
     "params_b": 32.5,
     "vram_q4": 21.6,
     "date": "2026-10-22"
+  },
+  {
+    "model_name": "DeepSeek R1 Distill Llama 70B",
+    "slug": "deepseek-r1-distill-llama-70b-vram-requirements-calculator",
+    "title": "DeepSeek R1 Distill Llama 70B VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run DeepSeek R1 Distill Llama 70B (70.6B) in FP16 (143.4GB), Q8_0 (78.0GB), and Q4_K_M (45.3GB) with Ollama or llama.cpp.",
+    "params_b": 70.6,
+    "vram_q4": 45.3,
+    "date": "2026-10-23"
+  },
+  {
+    "model_name": "Mistral Large 2 123B Instruct",
+    "slug": "mistral-large-2-123b-instruct-vram-requirements-calculator",
+    "title": "Mistral Large 2 123B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Mistral Large 2 123B Instruct (123.0B) in FP16 (248.2GB), Q8_0 (134.6GB), and Q4_K_M (77.8GB) with Ollama or llama.cpp.",
+    "params_b": 123.0,
+    "vram_q4": 77.8,
+    "date": "2026-10-23"
+  },
+  {
+    "model_name": "Qwen 2.5 72B Instruct",
+    "slug": "qwen-25-72b-instruct-vram-requirements-calculator",
+    "title": "Qwen 2.5 72B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Qwen 2.5 72B Instruct (72.7B) in FP16 (147.6GB), Q8_0 (80.3GB), and Q4_K_M (46.6GB) with Ollama or llama.cpp.",
+    "params_b": 72.7,
+    "vram_q4": 46.6,
+    "date": "2026-10-23"
   }
 ]
