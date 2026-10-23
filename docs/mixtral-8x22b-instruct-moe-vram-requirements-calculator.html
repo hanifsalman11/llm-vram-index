@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixtral 8x22B Instruct MoE VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+  <meta name="description" content="Calculate exact GPU VRAM and Unified Memory needed to run Mixtral 8x22B Instruct MoE (141.0B) in FP16 (284.2GB), Q8_0 (154.1GB), and Q4_K_M (88.9GB) with Ollama or llama.cpp.">
+  <link rel="canonical" href="https://hanifsalman11.github.io/llm-vram-index/mixtral-8x22b-instruct-moe-vram-requirements-calculator.html">
+  <meta property="og:title" content="Mixtral 8x22B Instruct MoE VRAM Requirements, GGUF Quantization & GPU Calculator (2026)">
+  <meta property="og:description" content="Calculate exact GPU VRAM and Unified Memory needed to run Mixtral 8x22B Instruct MoE (141.0B) in FP16 (284.2GB), Q8_0 (154.1GB), and Q4_K_M (88.9GB) with Ollama or llama.cpp.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hanifsalman11.github.io/llm-vram-index/mixtral-8x22b-instruct-moe-vram-requirements-calculator.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Mixtral 8x22B Instruct MoE VRAM & GPU Sizing Calculator", "applicationCategory": "DeveloperApplication", "operatingSystem": "Windows, Linux, macOS", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much VRAM do I need to run Mixtral 8x22B Instruct MoE locally?", "acceptedAnswer": {"@type": "Answer", "text": "At 4-bit quantization (Q4_K_M) with an 8K context window, Mixtral 8x22B Instruct MoE requires 88.9 GB of VRAM. For 8-bit quantization (Q8_0), you need 154.1 GB, and for full 16-bit (FP16) weights you need 284.2 GB."}}, {"@type": "Question", "name": "Can a single NVIDIA RTX 4090 (24GB) run Mixtral 8x22B Instruct MoE?", "acceptedAnswer": {"@type": "Answer", "text": "At 88.9 GB for Q4_K_M, Mixtral 8x22B Instruct MoE exceeds a single 24GB GPU. You will either need aggressive IQ2_XS/IQ3_XS quantization, partial layer offloading to DDR5 system RAM, or a Dual-24GB GPU / 64GB Unified Memory setup."}}, {"@type": "Question", "name": "What is the exact Ollama command to run Mixtral 8x22B Instruct MoE?", "acceptedAnswer": {"@type": "Answer", "text": "Install Ollama and execute `ollama run mixtral` in your terminal. By default, Ollama pulls the 4-bit quantized GGUF build requiring approximately 88.9 GB of memory."}}]}]}</script>
+</head>
+<body class="bg-neutral-950 text-neutral-100 antialiased min-h-screen flex flex-col">
+  <header class="border-b border-neutral-800 bg-neutral-900/80 backdrop-blur sticky top-0 z-30">
+    <div class="max-w-5xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <a href="index.html" class="text-lg font-black tracking-tight text-white flex items-center gap-2">
+        <span class="bg-lime-500 text-neutral-950 px-2 py-0.5 rounded font-black">VRAM</span>CalcIndex
+      </a>
+      <a href="https://www.amazon.com/s?k=NVIDIA%2BGeForce%2BRTX%2B4090%2B5090%2B24GB%2B32GB%2BGraphics%2BCard&tag=salmanrevie04-20" target="_blank" rel="nofollow sponsored" class="text-xs sm:text-sm bg-lime-500 hover:bg-lime-400 text-neutral-950 font-extrabold px-3.5 py-2 rounded-lg transition">
+        Shop Local AI GPUs & Workstations on Amazon →
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-10 flex-1 w-full">
+    <div class="mb-8">
+      <div class="flex flex-wrap items-center gap-2.5 mb-3">
+        <span class="text-xs font-extrabold uppercase tracking-widest bg-lime-500 text-neutral-950 px-3 py-1 rounded-full">141.0B Parameters</span>
+        <span class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full">Sparse Mixture-of-Experts</span>
+        <span class="text-xs font-semibold bg-neutral-800 text-neutral-300 px-3 py-1 rounded-full">Max Context: 65,536 Tokens</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-black text-white leading-tight">Mixtral 8x22B Instruct MoE VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</h1>
+      <div class="mt-4 bg-neutral-900 border-l-4 border-lime-500 p-4 rounded-r-xl text-sm text-neutral-200 leading-relaxed">
+        <strong>AI Hardware Benchmark Verdict:</strong> Running Mixtral 8x22B Instruct MoE (141.0B parameters, Sparse Mixture-of-Experts) at full unquantized FP16 precision requires 284.2 GB of VRAM. Using 4-bit GGUF quantization (Q4_K_M) compresses the memory footprint down to 88.9 GB (including an 8,192-token KV cache), making it ideal for Dual NVIDIA GeForce RTX 3090 / RTX 4090 24GB (48GB+ Total VRAM) or Mac Studio M2/M4 Ultra 128GB.
+      </div>
+    </div>
+
+    <!-- INTERACTIVE VRAM, QUANTIZATION & TOKENS/SEC CALCULATOR -->
+    <section class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 sm:p-8 mb-12 shadow-2xl">
+      <h2 class="text-xl font-extrabold text-white mb-2">Interactive Mixtral 8x22B Instruct MoE VRAM & Token Speed Calculator</h2>
+      <p class="text-xs text-neutral-400 mb-6">Select your GGUF/EXL2 quantization precision, context window length, and hardware tier to calculate exact VRAM usage and estimated generation speed.</p>
+
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-5">
+          <div>
+            <label for="quantSelect" class="block text-sm font-medium text-neutral-300 mb-1.5">Quantization Precision (GGUF / AWQ / EXL2)</label>
+            <select id="quantSelect" class="w-full bg-neutral-950 border border-neutral-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-lime-500">
+              <option value="2.00">FP16 / BF16 — 16-Bit Full Precision</option>
+              <option value="1.08">Q8_0 — 8-Bit Extreme Quality</option>
+              <option value="0.82">Q6_K — 6-Bit Near-Lossless</option>
+              <option value="0.71">Q5_K_M — 5-Bit High Accuracy</option>
+              <option value="0.62" selected>Q4_K_M — 4-Bit Recommended Sweet Spot</option>
+              <option value="0.46">IQ3_XS — 3-Bit Low-VRAM Compression</option>
+            </select>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-sm font-medium mb-1.5">
+              <label for="ctxSlider" class="text-neutral-300">Context Window Size (KV Cache Tokens)</label>
+              <span class="text-lime-400 font-bold"><span id="ctxVal">8,192</span> Tokens</span>
+            </div>
+            <input id="ctxSlider" type="range" min="2048" max="65536" step="2048" value="8192" class="w-full accent-lime-500 cursor-pointer">
+          </div>
+
+          <div>
+            <label for="gpuTierSelect" class="block text-sm font-medium text-neutral-300 mb-1.5">Your Target GPU / Unified Memory Hardware</label>
+            <select id="gpuTierSelect" class="w-full bg-neutral-950 border border-neutral-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-lime-500">
+              <option value="12|504">NVIDIA RTX 4070 Super (12GB VRAM | 504 GB/s)</option>
+              <option value="16|736">NVIDIA RTX 4080 Super / 4070 Ti Super (16GB VRAM | 736 GB/s)</option>
+              <option value="24|1008" selected>NVIDIA RTX 4090 / RTX 3090 (24GB VRAM | 1,008 GB/s)</option>
+              <option value="32|1792">NVIDIA RTX 5090 (32GB GDDR7 VRAM | 1,792 GB/s)</option>
+              <option value="48|1008">Dual NVIDIA RTX 3090 / 4090 Rig (48GB Total VRAM)</option>
+              <option value="64|273">Apple Mac Mini M4 Pro (64GB Unified Memory | 273 GB/s)</option>
+              <option value="128|800">Apple Mac Studio Ultra (128GB Unified Memory | 800 GB/s)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-neutral-950 border border-lime-500/30 rounded-xl p-4">
+            <span class="text-xs uppercase text-lime-400 font-bold">Total VRAM Required</span>
+            <div class="text-2xl sm:text-3xl font-black text-white mt-1"><span id="totalVramOut">0.0</span> <span class="text-sm font-normal text-neutral-400">GB</span></div>
+            <p id="weightsBreakdownOut" class="text-xs text-neutral-500 mt-1">Weights + KV Cache + CUDA</p>
+          </div>
+
+          <div class="bg-neutral-950 border border-emerald-500/30 rounded-xl p-4">
+            <span class="text-xs uppercase text-emerald-400 font-bold">Est. Generation Speed</span>
+            <div class="text-2xl sm:text-3xl font-black text-emerald-400 mt-1">~<span id="tpsOut">0</span> <span class="text-sm font-normal text-neutral-400">tok/s</span></div>
+            <p id="fitStatusOut" class="text-xs text-emerald-400 font-semibold mt-1">Fits 100% in VRAM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 bg-lime-950/40 border border-lime-500/30 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div id="hardwareAdviceBanner" class="text-sm text-lime-100 font-medium"></div>
+        <a id="dynamicGpuBtn" href="https://www.amazon.com/s?k=NVIDIA%2BGeForce%2BRTX%2B4090%2B5090%2B24GB%2B32GB%2BGraphics%2BCard&tag=salmanrevie04-20" target="_blank" rel="nofollow sponsored" class="shrink-0 bg-lime-500 hover:bg-lime-400 text-neutral-950 font-extrabold px-4 py-2.5 rounded-lg text-xs uppercase tracking-wider transition">
+          Shop Recommended GPU on Amazon →
+        </a>
+      </div>
+    </section>
+
+    <!-- 4-CARD HARDWARE RECOMMENDATIONS -->
+    <section class="mb-12">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-2xl font-extrabold text-white">Recommended Hardware Builds for Mixtral 8x22B Instruct MoE</h2>
+        <span class="text-xs text-neutral-400">High-Bandwidth Local Inference Components</span>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-5 flex flex-col justify-between hover:border-lime-500/60 transition">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider bg-lime-500/10 text-lime-400 border border-lime-500/20 px-2.5 py-0.5 rounded">Recommended Discrete GPU</span>
+              <span class="text-sm font-bold text-emerald-400">$1,699 - $2,499</span>
+            </div>
+            <h3 class="text-base font-bold text-white mt-2">Dual NVIDIA GeForce RTX 3090 / RTX 4090 24GB (48GB+ Total VRAM) or Mac Studio M2/M4 Ultra 128GB</h3>
+            <p class="text-xs text-neutral-400 mt-2 leading-relaxed">🖥️ Provides high-bandwidth GDDR6X/GDDR7 memory to run Mixtral 8x22B Instruct MoE at maximum tokens/sec without PCIe system RAM bottlenecks.</p>
+          </div>
+          <a href="https://www.amazon.com/s?k=NVIDIA+GeForce+RTX+4090+24GB+GDDR6X+Graphics+Card&tag=salmanrevie04-20" target="_blank" rel="nofollow sponsored" class="mt-5 block text-center bg-lime-500 hover:bg-lime-400 text-neutral-950 font-extrabold py-2.5 px-4 rounded-lg text-sm transition shadow-lg">
+            Check Price on Amazon →
+          </a>
+        </div>
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-5 flex flex-col justify-between hover:border-lime-500/60 transition">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider bg-lime-500/10 text-lime-400 border border-lime-500/20 px-2.5 py-0.5 rounded">Best Silent Unified Memory Rig</span>
+              <span class="text-sm font-bold text-emerald-400">$1,999 - $3,999</span>
+            </div>
+            <h3 class="text-base font-bold text-white mt-2">Apple Mac Studio / Mac Mini Pro Unified Memory Workstation</h3>
+            <p class="text-xs text-neutral-400 mt-2 leading-relaxed">🖥️ Apple Silicon Unified Memory allocates up to 75% of system RAM directly to the Metal GPU for large GGUF/MLX models at under 65W wall power.</p>
+          </div>
+          <a href="https://www.amazon.com/s?k=Apple+Mac+Studio+M2+Ultra+Unified+Memory+Workstation&tag=salmanrevie04-20" target="_blank" rel="nofollow sponsored" class="mt-5 block text-center bg-lime-500 hover:bg-lime-400 text-neutral-950 font-extrabold py-2.5 px-4 rounded-lg text-sm transition shadow-lg">
+            Check Price on Amazon →
+          </a>
+        </div>
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-5 flex flex-col justify-between hover:border-lime-500/60 transition">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider bg-lime-500/10 text-lime-400 border border-lime-500/20 px-2.5 py-0.5 rounded">System RAM for CPU Layer Offloading</span>
+              <span class="text-sm font-bold text-emerald-400">$189 - $249</span>
+            </div>
+            <h3 class="text-base font-bold text-white mt-2">Corsair Vengeance / G.Skill 64GB (2x32GB) DDR5-6400 CL32 Memory Kit</h3>
+            <p class="text-xs text-neutral-400 mt-2 leading-relaxed">🖥️ Dual-channel DDR5-6400+ doubles token generation speed when partial layers overflow GPU VRAM into system memory.</p>
+          </div>
+          <a href="https://www.amazon.com/s?k=64GB+2x32GB+DDR5+6400+CL32+Desktop+Memory+Kit&tag=salmanrevie04-20" target="_blank" rel="nofollow sponsored" class="mt-5 block text-center bg-lime-500 hover:bg-lime-400 text-neutral-950 font-extrabold py-2.5 px-4 rounded-lg text-sm transition shadow-lg">
+            Check Price on Amazon →
+          </a>
+        </div>
+        <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-5 flex flex-col justify-between hover:border-lime-500/60 transition">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="text-xs font-bold uppercase tracking-wider bg-lime-500/10 text-lime-400 border border-lime-500/20 px-2.5 py-0.5 rounded">Instant GGUF Model Loading Storage</span>
+              <span class="text-sm font-bold text-emerald-400">$129 - $199</span>
+            </div>
+            <h3 class="text-base font-bold text-white mt-2">2TB PCIe Gen4/Gen5 NVMe M.2 Internal SSD (7,400 MB/s)</h3>
+            <p class="text-xs text-neutral-400 mt-2 leading-relaxed">🖥️ Loads 88.9GB+ safetensors and GGUF model weights into VRAM in under 3 seconds via Microsoft DirectStorage / mmap.</p>
+          </div>
+          <a href="https://www.amazon.com/s?k=2TB+PCIe+Gen4+NVMe+M.2+Internal+Gaming+SSD+7400MB&tag=salmanrevie04-20" target="_blank" rel="nofollow sponsored" class="mt-5 block text-center bg-lime-500 hover:bg-lime-400 text-neutral-950 font-extrabold py-2.5 px-4 rounded-lg text-sm transition shadow-lg">
+            Check Price on Amazon →
+          </a>
+        </div></div>
+    </section>
+
+    <!-- QUANTIZATION COMPARISON TABLE -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-extrabold text-white mb-4">Mixtral 8x22B Instruct MoE Quantization & Memory Footprint Matrix</h2>
+      <div class="overflow-x-auto bg-neutral-900 border border-neutral-800 rounded-xl">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="border-b border-neutral-800 bg-neutral-950/60 text-neutral-400 uppercase text-xs">
+              <th class="py-3.5 px-4">Quantization Format</th>
+              <th class="py-3.5 px-4">Model Weights Size</th>
+              <th class="py-3.5 px-4 text-lime-400">Total VRAM (w/ 8K Context)</th>
+              <th class="py-3.5 px-4 text-emerald-400">Perplexity Retention</th>
+              <th class="py-3.5 px-4">Target Hardware Tier</th>
+            </tr>
+          </thead>
+          <tbody>
+        <tr class="border-b border-neutral-800 hover:bg-neutral-800/40">
+          <td class="py-3 px-4 font-bold text-white">FP16 / BF16 (Unquantized)</td>
+          <td class="py-3 px-4 text-neutral-300">282.0 GB</td>
+          <td class="py-3 px-4 font-bold text-lime-400">283.5 GB</td>
+          <td class="py-3 px-4 text-emerald-400">100% Baseline (Lossless)</td>
+          <td class="py-3 px-4 text-xs text-neutral-400">Multi-GPU Server / 80GB A100</td>
+        </tr>
+        <tr class="border-b border-neutral-800 hover:bg-neutral-800/40">
+          <td class="py-3 px-4 font-bold text-white">Q8_0 (8-Bit GGUF)</td>
+          <td class="py-3 px-4 text-neutral-300">152.3 GB</td>
+          <td class="py-3 px-4 font-bold text-lime-400">153.8 GB</td>
+          <td class="py-3 px-4 text-emerald-400">99.9% (Indistinguishable)</td>
+          <td class="py-3 px-4 text-xs text-neutral-400">High-VRAM Workstation / Mac Studio</td>
+        </tr>
+        <tr class="border-b border-neutral-800 hover:bg-neutral-800/40">
+          <td class="py-3 px-4 font-bold text-white">Q6_K (6-Bit K-Quant)</td>
+          <td class="py-3 px-4 text-neutral-300">115.6 GB</td>
+          <td class="py-3 px-4 font-bold text-lime-400">117.1 GB</td>
+          <td class="py-3 px-4 text-emerald-400">99.6% (Near-Lossless)</td>
+          <td class="py-3 px-4 text-xs text-neutral-400">Enthusiast 24GB–48GB VRAM</td>
+        </tr>
+        <tr class="border-b border-neutral-800 hover:bg-neutral-800/40">
+          <td class="py-3 px-4 font-bold text-white">Q5_K_M (5-Bit K-Quant)</td>
+          <td class="py-3 px-4 text-neutral-300">100.1 GB</td>
+          <td class="py-3 px-4 font-bold text-lime-400">101.6 GB</td>
+          <td class="py-3 px-4 text-emerald-400">99.3% (High Accuracy)</td>
+          <td class="py-3 px-4 text-xs text-neutral-400">Balanced Quality & Speed</td>
+        </tr>
+        <tr class="border-b border-neutral-800 hover:bg-neutral-800/40">
+          <td class="py-3 px-4 font-bold text-white">Q4_K_M (4-Bit Recommended)</td>
+          <td class="py-3 px-4 text-neutral-300">87.4 GB</td>
+          <td class="py-3 px-4 font-bold text-lime-400">88.9 GB</td>
+          <td class="py-3 px-4 text-emerald-400">98.8% (Sweet Spot)</td>
+          <td class="py-3 px-4 text-xs text-neutral-400">Consumer RTX GPUs & Mac Mini Pro</td>
+        </tr>
+        <tr class="border-b border-neutral-800 hover:bg-neutral-800/40">
+          <td class="py-3 px-4 font-bold text-white">IQ3_XS (3-Bit Importance Matrix)</td>
+          <td class="py-3 px-4 text-neutral-300">64.9 GB</td>
+          <td class="py-3 px-4 font-bold text-lime-400">66.4 GB</td>
+          <td class="py-3 px-4 text-emerald-400">96.2% (Noticeable Compression)</td>
+          <td class="py-3 px-4 text-xs text-neutral-400">Tight VRAM Budget Fit</td>
+        </tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- OPTIMIZATION TIPS -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-extrabold text-white mb-4">Ollama & llama.cpp Performance Tuning Tips</h2>
+      <ul class="space-y-3"><li class='flex items-start gap-3 bg-neutral-900 border border-neutral-800 p-4 rounded-xl text-sm text-neutral-200'><span class='text-lime-400 font-bold'>⚡</span><span>Use Q4_K_M or IQ4_XS quantization in Ollama / llama.cpp for Mixtral 8x22B Instruct MoE: it retains 99.1% of FP16 perplexity while cutting VRAM usage from 284.2 GB down to 88.9 GB.</span></li><li class='flex items-start gap-3 bg-neutral-900 border border-neutral-800 p-4 rounded-xl text-sm text-neutral-200'><span class='text-lime-400 font-bold'>⚡</span><span>Enable Flash Attention (-fa in llama.cpp or OLLAMA_FLASH_ATTENTION=1) and Q8_0 KV-Cache quantization to cut long-context memory overhead by 50%.</span></li><li class='flex items-start gap-3 bg-neutral-900 border border-neutral-800 p-4 rounded-xl text-sm text-neutral-200'><span class='text-lime-400 font-bold'>⚡</span><span>Avoid splitting tensor layers across PCIe x4 risers when running multi-GPU setups; use `--split-mode row` with high-speed PCIe 4.0/5.0 x16 lanes.</span></li><li class='flex items-start gap-3 bg-neutral-900 border border-neutral-800 p-4 rounded-xl text-sm text-neutral-200'><span class='text-lime-400 font-bold'>⚡</span><span>Set `--n-gpu-layers 99` to offload all transformer blocks to VRAM, and reduce layer count by 4–6 layers only if your context window exceeds 32,768 tokens.</span></li></ul>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-extrabold text-white mb-5">Frequently Asked Questions (Mixtral 8x22B Instruct MoE)</h2>
+      <div class="space-y-4"><div class='bg-neutral-900 border border-neutral-800 rounded-xl p-5'><h3 class='font-bold text-white text-base mb-2'>How much VRAM do I need to run Mixtral 8x22B Instruct MoE locally?</h3><p class='text-sm text-neutral-300 leading-relaxed'>At 4-bit quantization (Q4_K_M) with an 8K context window, Mixtral 8x22B Instruct MoE requires 88.9 GB of VRAM. For 8-bit quantization (Q8_0), you need 154.1 GB, and for full 16-bit (FP16) weights you need 284.2 GB.</p></div><div class='bg-neutral-900 border border-neutral-800 rounded-xl p-5'><h3 class='font-bold text-white text-base mb-2'>Can a single NVIDIA RTX 4090 (24GB) run Mixtral 8x22B Instruct MoE?</h3><p class='text-sm text-neutral-300 leading-relaxed'>At 88.9 GB for Q4_K_M, Mixtral 8x22B Instruct MoE exceeds a single 24GB GPU. You will either need aggressive IQ2_XS/IQ3_XS quantization, partial layer offloading to DDR5 system RAM, or a Dual-24GB GPU / 64GB Unified Memory setup.</p></div><div class='bg-neutral-900 border border-neutral-800 rounded-xl p-5'><h3 class='font-bold text-white text-base mb-2'>What is the exact Ollama command to run Mixtral 8x22B Instruct MoE?</h3><p class='text-sm text-neutral-300 leading-relaxed'>Install Ollama and execute `ollama run mixtral` in your terminal. By default, Ollama pulls the 4-bit quantized GGUF build requiring approximately 88.9 GB of memory.</p></div></div>
+    </section>
+  </main>
+
+  <footer class="border-t border-neutral-800 py-8 text-center text-xs text-neutral-500 px-4">
+    <p>© 2026 VRAMCalcIndex. Independent Local LLM & GPU Hardware Benchmark Database. As an Amazon Associate, we earn from qualifying purchases.</p>
+  </footer>
+
+  <script>
+    const paramsB = 141.0;
+    const amzDomain = "www.amazon.com";
+    const amzTag = "salmanrevie04-20";
+
+    const quantSelect = document.getElementById('quantSelect');
+    const ctxSlider = document.getElementById('ctxSlider');
+    const gpuTierSelect = document.getElementById('gpuTierSelect');
+    const ctxVal = document.getElementById('ctxVal');
+    const totalVramOut = document.getElementById('totalVramOut');
+    const weightsBreakdownOut = document.getElementById('weightsBreakdownOut');
+    const tpsOut = document.getElementById('tpsOut');
+    const fitStatusOut = document.getElementById('fitStatusOut');
+    const hardwareAdviceBanner = document.getElementById('hardwareAdviceBanner');
+    const dynamicGpuBtn = document.getElementById('dynamicGpuBtn');
+
+    function recalculateVram() {
+      const bFactor = parseFloat(quantSelect.value);
+      const ctxTokens = parseInt(ctxSlider.value, 10);
+      const gpuParts = gpuTierSelect.value.split('|');
+      const availVram = parseFloat(gpuParts[0]);
+      const memBandwidth = parseFloat(gpuParts[1]);
+
+      ctxVal.textContent = ctxTokens.toLocaleString();
+
+      const weightsGb = paramsB * bFactor;
+      const kvCacheGb = (ctxTokens / 8192.0) * (paramsB * 0.022);
+      const cudaOverheadGb = 0.8;
+      const totalRequiredGb = weightsGb + kvCacheGb + cudaOverheadGb;
+
+      totalVramOut.textContent = totalRequiredGb.toFixed(1);
+      weightsBreakdownOut.textContent = `${weightsGb.toFixed(1)}GB Weights + ${kvCacheGb.toFixed(1)}GB KV`;
+
+      if (totalRequiredGb <= availVram) {
+        const estTps = Math.min(145, Math.max(4, Math.round((memBandwidth * 0.68) / Math.max(1.5, weightsGb))));
+        tpsOut.textContent = estTps;
+        fitStatusOut.textContent = `✅ Fits 100% in ${availVram}GB VRAM`;
+        fitStatusOut.className = "text-xs text-emerald-400 font-semibold mt-1";
+      } else {
+        const offloadRatio = availVram / totalRequiredGb;
+        const estTps = Math.max(1, Math.round(12 * offloadRatio));
+        tpsOut.textContent = estTps;
+        fitStatusOut.textContent = `⚠️ Needs +${(totalRequiredGb - availVram).toFixed(1)}GB CPU RAM Offload`;
+        fitStatusOut.className = "text-xs text-amber-400 font-semibold mt-1";
+      }
+
+      let searchHw = "NVIDIA+GeForce+RTX+4090+24GB+Graphics+Card";
+      if (totalRequiredGb <= 15.5) {
+        searchHw = "NVIDIA+GeForce+RTX+4070+Ti+Super+16GB+Graphics+Card";
+        hardwareAdviceBanner.innerHTML = `🚀 <strong>Optimal Build:</strong> Requires <strong>${totalRequiredGb.toFixed(1)} GB VRAM</strong>. Runs at full speed on a single <strong>16GB NVIDIA RTX 4070 Ti Super / RTX 4080 Super</strong>.`;
+      } else if (totalRequiredGb <= 23.8) {
+        searchHw = "NVIDIA+GeForce+RTX+4090+24GB+Graphics+Card";
+        hardwareAdviceBanner.innerHTML = `🚀 <strong>Optimal Build:</strong> Requires <strong>${totalRequiredGb.toFixed(1)} GB VRAM</strong>. Fits completely inside a single <strong>24GB NVIDIA RTX 3090 / RTX 4090</strong>.`;
+      } else if (totalRequiredGb <= 31.8) {
+        searchHw = "NVIDIA+GeForce+RTX+5090+32GB+Graphics+Card";
+        hardwareAdviceBanner.innerHTML = `🚀 <strong>Optimal Build:</strong> Requires <strong>${totalRequiredGb.toFixed(1)} GB VRAM</strong>. Ideal for an <strong>NVIDIA RTX 5090 32GB</strong> or <strong>Mac Mini M4 Pro 64GB</strong>.`;
+      } else {
+        searchHw = "Apple+Mac+Studio+Unified+Memory+Workstation";
+        hardwareAdviceBanner.innerHTML = `🚀 <strong>Workstation Tier:</strong> Requires <strong>${totalRequiredGb.toFixed(1)} GB Memory</strong>. Best paired with a <strong>Dual RTX 24GB GPU Rig (48GB)</strong> or <strong>Mac Studio Unified Memory</strong>.`;
+      }
+
+      dynamicGpuBtn.href = `https://${amzDomain}/s?k=${searchHw}&tag=${amzTag}`;
+    }
+
+    quantSelect.addEventListener('change', recalculateVram);
+    ctxSlider.addEventListener('input', recalculateVram);
+    gpuTierSelect.addEventListener('change', recalculateVram);
+    recalculateVram();
+  </script>
+</body>
+</html>

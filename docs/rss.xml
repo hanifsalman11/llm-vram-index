@@ -7,6 +7,24 @@
     <atom:link href="https://hanifsalman11.github.io/llm-vram-index/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
     <item>
+      <title>Llama 3.2 11B Vision Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/llama-32-11b-vision-instruct-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/llama-32-11b-vision-instruct-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Llama 3.2 11B Vision Instruct (10.7B) in FP16 (23.6GB), Q8_0 (13.4GB), and Q4_K_M (8.1GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>Mixtral 8x7B Instruct v0.1 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/mixtral-8x7b-instruct-v01-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/mixtral-8x7b-instruct-v01-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Mixtral 8x7B Instruct v0.1 (46.7B) in FP16 (95.6GB), Q8_0 (52.2GB), and Q4_K_M (30.5GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>Mixtral 8x22B Instruct MoE VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/mixtral-8x22b-instruct-moe-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/mixtral-8x22b-instruct-moe-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Mixtral 8x22B Instruct MoE (141.0B) in FP16 (284.2GB), Q8_0 (154.1GB), and Q4_K_M (88.9GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
       <title>Command R+ 104B (08-2024) VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
       <link>https://hanifsalman11.github.io/llm-vram-index/command-r-104b-08-2024-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/command-r-104b-08-2024-vram-requirements-calculator.html</guid>

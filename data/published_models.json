@@ -106,5 +106,32 @@
     "params_b": 104.0,
     "vram_q4": 66.0,
     "date": "2026-10-23"
+  },
+  {
+    "model_name": "Mixtral 8x22B Instruct MoE",
+    "slug": "mixtral-8x22b-instruct-moe-vram-requirements-calculator",
+    "title": "Mixtral 8x22B Instruct MoE VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Mixtral 8x22B Instruct MoE (141.0B) in FP16 (284.2GB), Q8_0 (154.1GB), and Q4_K_M (88.9GB) with Ollama or llama.cpp.",
+    "params_b": 141.0,
+    "vram_q4": 88.9,
+    "date": "2026-10-23"
+  },
+  {
+    "model_name": "Mixtral 8x7B Instruct v0.1",
+    "slug": "mixtral-8x7b-instruct-v01-vram-requirements-calculator",
+    "title": "Mixtral 8x7B Instruct v0.1 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Mixtral 8x7B Instruct v0.1 (46.7B) in FP16 (95.6GB), Q8_0 (52.2GB), and Q4_K_M (30.5GB) with Ollama or llama.cpp.",
+    "params_b": 46.7,
+    "vram_q4": 30.5,
+    "date": "2026-10-23"
+  },
+  {
+    "model_name": "Llama 3.2 11B Vision Instruct",
+    "slug": "llama-32-11b-vision-instruct-vram-requirements-calculator",
+    "title": "Llama 3.2 11B Vision Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Llama 3.2 11B Vision Instruct (10.7B) in FP16 (23.6GB), Q8_0 (13.4GB), and Q4_K_M (8.1GB) with Ollama or llama.cpp.",
+    "params_b": 10.7,
+    "vram_q4": 8.1,
+    "date": "2026-10-23"
   }
 ]
