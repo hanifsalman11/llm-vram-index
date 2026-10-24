@@ -187,5 +187,32 @@
     "params_b": 34.0,
     "vram_q4": 22.6,
     "date": "2026-10-24"
+  },
+  {
+    "model_name": "Solar Pro 22B Preview",
+    "slug": "solar-pro-22b-preview-vram-requirements-calculator",
+    "title": "Solar Pro 22B Preview VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Solar Pro 22B Preview (22.0B) in FP16 (46.2GB), Q8_0 (25.6GB), and Q4_K_M (15.1GB) with Ollama or llama.cpp.",
+    "params_b": 22.0,
+    "vram_q4": 15.1,
+    "date": "2026-10-24"
+  },
+  {
+    "model_name": "Nemotron 4 70B Instruct",
+    "slug": "nemotron-4-70b-instruct-vram-requirements-calculator",
+    "title": "Nemotron 4 70B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Nemotron 4 70B Instruct (70.6B) in FP16 (143.4GB), Q8_0 (78.0GB), and Q4_K_M (45.3GB) with Ollama or llama.cpp.",
+    "params_b": 70.6,
+    "vram_q4": 45.3,
+    "date": "2026-10-24"
+  },
+  {
+    "model_name": "Aya Expanse 32B",
+    "slug": "aya-expanse-32b-vram-requirements-calculator",
+    "title": "Aya Expanse 32B VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Aya Expanse 32B (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-24"
   }
 ]

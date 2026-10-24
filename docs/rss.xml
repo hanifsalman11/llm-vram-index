@@ -7,6 +7,24 @@
     <atom:link href="https://hanifsalman11.github.io/llm-vram-index/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
     <item>
+      <title>Aya Expanse 32B VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/aya-expanse-32b-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/aya-expanse-32b-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Aya Expanse 32B (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>Nemotron 4 70B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/nemotron-4-70b-instruct-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/nemotron-4-70b-instruct-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Nemotron 4 70B Instruct (70.6B) in FP16 (143.4GB), Q8_0 (78.0GB), and Q4_K_M (45.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>Solar Pro 22B Preview VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/solar-pro-22b-preview-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/solar-pro-22b-preview-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Solar Pro 22B Preview (22.0B) in FP16 (46.2GB), Q8_0 (25.6GB), and Q4_K_M (15.1GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
       <title>Yi 1.5 34B Chat VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
       <link>https://hanifsalman11.github.io/llm-vram-index/yi-15-34b-chat-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/yi-15-34b-chat-vram-requirements-calculator.html</guid>
