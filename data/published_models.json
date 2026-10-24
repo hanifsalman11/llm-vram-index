@@ -133,5 +133,32 @@
     "params_b": 10.7,
     "vram_q4": 8.1,
     "date": "2026-10-23"
+  },
+  {
+    "model_name": "Llama 3.2 90B Vision Instruct",
+    "slug": "llama-32-90b-vision-instruct-vram-requirements-calculator",
+    "title": "Llama 3.2 90B Vision Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Llama 3.2 90B Vision Instruct (90.0B) in FP16 (182.2GB), Q8_0 (99.0GB), and Q4_K_M (57.3GB) with Ollama or llama.cpp.",
+    "params_b": 90.0,
+    "vram_q4": 57.3,
+    "date": "2026-10-24"
+  },
+  {
+    "model_name": "Qwen 2 VL 72B Instruct",
+    "slug": "qwen-2-vl-72b-instruct-vram-requirements-calculator",
+    "title": "Qwen 2 VL 72B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Qwen 2 VL 72B Instruct (72.0B) in FP16 (146.2GB), Q8_0 (79.6GB), and Q4_K_M (46.1GB) with Ollama or llama.cpp.",
+    "params_b": 72.0,
+    "vram_q4": 46.1,
+    "date": "2026-10-24"
+  },
+  {
+    "model_name": "DeepSeek V2.5 236B MoE",
+    "slug": "deepseek-v25-236b-moe-vram-requirements-calculator",
+    "title": "DeepSeek V2.5 236B MoE VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run DeepSeek V2.5 236B MoE (236.0B) in FP16 (474.2GB), Q8_0 (256.7GB), and Q4_K_M (147.8GB) with Ollama or llama.cpp.",
+    "params_b": 236.0,
+    "vram_q4": 147.8,
+    "date": "2026-10-24"
   }
 ]
