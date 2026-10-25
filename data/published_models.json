@@ -295,5 +295,32 @@
     "params_b": 32.0,
     "vram_q4": 21.3,
     "date": "2026-10-25"
+  },
+  {
+    "model_name": "System  For Windows 10",
+    "slug": "system-for-windows-10-vram-requirements-calculator",
+    "title": "System  For Windows 10 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run System  For Windows 10 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-25"
+  },
+  {
+    "model_name": "System  For Gta 5",
+    "slug": "system-for-gta-5-vram-requirements-calculator",
+    "title": "System  For Gta 5 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run System  For Gta 5 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-25"
+  },
+  {
+    "model_name": "System  For Davinci Resolve",
+    "slug": "system-for-davinci-resolve-vram-requirements-calculator",
+    "title": "System  For Davinci Resolve VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run System  For Davinci Resolve (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-25"
   }
 ]

@@ -7,6 +7,24 @@
     <atom:link href="https://hanifsalman11.github.io/llm-vram-index/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
     <item>
+      <title>System  For Davinci Resolve VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/system-for-davinci-resolve-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/system-for-davinci-resolve-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run System  For Davinci Resolve (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>System  For Gta 5 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/system-for-gta-5-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/system-for-gta-5-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run System  For Gta 5 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>System  For Windows 10 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/system-for-windows-10-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/system-for-windows-10-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run System  For Windows 10 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
       <title>System  For Gta 6 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
       <link>https://hanifsalman11.github.io/llm-vram-index/system-for-gta-6-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/system-for-gta-6-vram-requirements-calculator.html</guid>
@@ -167,24 +185,6 @@
       <link>https://hanifsalman11.github.io/llm-vram-index/gemma-2-27b-it-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/gemma-2-27b-it-vram-requirements-calculator.html</guid>
       <description>Calculate exact GPU VRAM and Unified Memory needed to run Gemma 2 27B IT (27.2B) in FP16 (56.6GB), Q8_0 (31.2GB), and Q4_K_M (18.4GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>Qwen 2.5 72B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/qwen-25-72b-instruct-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/qwen-25-72b-instruct-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run Qwen 2.5 72B Instruct (72.7B) in FP16 (147.6GB), Q8_0 (80.3GB), and Q4_K_M (46.6GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>Mistral Large 2 123B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/mistral-large-2-123b-instruct-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/mistral-large-2-123b-instruct-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run Mistral Large 2 123B Instruct (123.0B) in FP16 (248.2GB), Q8_0 (134.6GB), and Q4_K_M (77.8GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>DeepSeek R1 Distill Llama 70B VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/deepseek-r1-distill-llama-70b-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/deepseek-r1-distill-llama-70b-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run DeepSeek R1 Distill Llama 70B (70.6B) in FP16 (143.4GB), Q8_0 (78.0GB), and Q4_K_M (45.3GB) with Ollama or llama.cpp.</description>
     </item>
   </channel>
 </rss>
