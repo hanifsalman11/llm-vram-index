@@ -322,5 +322,32 @@
     "params_b": 32.0,
     "vram_q4": 21.3,
     "date": "2026-10-25"
+  },
+  {
+    "model_name": "System  For Autocad",
+    "slug": "system-for-autocad-vram-requirements-calculator",
+    "title": "System  For Autocad VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run System  For Autocad (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-25"
+  },
+  {
+    "model_name": "System  For Blender",
+    "slug": "system-for-blender-vram-requirements-calculator",
+    "title": "System  For Blender VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run System  For Blender (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-25"
+  },
+  {
+    "model_name": "System  For Minecraft",
+    "slug": "system-for-minecraft-vram-requirements-calculator",
+    "title": "System  For Minecraft VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run System  For Minecraft (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-25"
   }
 ]

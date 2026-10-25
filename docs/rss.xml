@@ -7,6 +7,24 @@
     <atom:link href="https://hanifsalman11.github.io/llm-vram-index/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
     <item>
+      <title>System  For Minecraft VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/system-for-minecraft-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/system-for-minecraft-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run System  For Minecraft (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>System  For Blender VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/system-for-blender-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/system-for-blender-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run System  For Blender (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>System  For Autocad VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/system-for-autocad-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/system-for-autocad-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run System  For Autocad (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
       <title>System  For Davinci Resolve VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
       <link>https://hanifsalman11.github.io/llm-vram-index/system-for-davinci-resolve-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/system-for-davinci-resolve-vram-requirements-calculator.html</guid>
@@ -167,24 +185,6 @@
       <link>https://hanifsalman11.github.io/llm-vram-index/qwen-25-14b-instruct-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/qwen-25-14b-instruct-vram-requirements-calculator.html</guid>
       <description>Calculate exact GPU VRAM and Unified Memory needed to run Qwen 2.5 14B Instruct (14.7B) in FP16 (31.6GB), Q8_0 (17.7GB), and Q4_K_M (10.6GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>Mistral Small 3 24B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/mistral-small-3-24b-instruct-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/mistral-small-3-24b-instruct-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run Mistral Small 3 24B Instruct (24.0B) in FP16 (50.2GB), Q8_0 (27.7GB), and Q4_K_M (16.4GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>Llama 3.1 8B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/llama-31-8b-instruct-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/llama-31-8b-instruct-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run Llama 3.1 8B Instruct (8.0B) in FP16 (18.2GB), Q8_0 (10.4GB), and Q4_K_M (6.5GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>Gemma 2 27B IT VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/gemma-2-27b-it-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/gemma-2-27b-it-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run Gemma 2 27B IT (27.2B) in FP16 (56.6GB), Q8_0 (31.2GB), and Q4_K_M (18.4GB) with Ollama or llama.cpp.</description>
     </item>
   </channel>
 </rss>
