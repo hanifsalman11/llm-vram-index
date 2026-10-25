@@ -241,5 +241,32 @@
     "params_b": 141.0,
     "vram_q4": 88.9,
     "date": "2026-10-24"
+  },
+  {
+    "model_name": "InternVL 2.5 38B Multimodal",
+    "slug": "internvl-25-38b-multimodal-vram-requirements-calculator",
+    "title": "InternVL 2.5 38B Multimodal VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run InternVL 2.5 38B Multimodal (38.0B) in FP16 (78.2GB), Q8_0 (42.8GB), and Q4_K_M (25.1GB) with Ollama or llama.cpp.",
+    "params_b": 38.0,
+    "vram_q4": 25.1,
+    "date": "2026-10-25"
+  },
+  {
+    "model_name": "Marco-o1 7B Reasoning",
+    "slug": "marco-o1-7b-reasoning-vram-requirements-calculator",
+    "title": "Marco-o1 7B Reasoning VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Marco-o1 7B Reasoning (7.6B) in FP16 (17.4GB), Q8_0 (10.0GB), and Q4_K_M (6.2GB) with Ollama or llama.cpp.",
+    "params_b": 7.6,
+    "vram_q4": 6.2,
+    "date": "2026-10-25"
+  },
+  {
+    "model_name": "SmolLM2 1.7B Instruct",
+    "slug": "smollm2-17b-instruct-vram-requirements-calculator",
+    "title": "SmolLM2 1.7B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run SmolLM2 1.7B Instruct (1.7B) in FP16 (5.6GB), Q8_0 (3.6GB), and Q4_K_M (2.6GB) with Ollama or llama.cpp.",
+    "params_b": 1.7,
+    "vram_q4": 2.6,
+    "date": "2026-10-25"
   }
 ]
