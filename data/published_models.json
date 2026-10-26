@@ -349,5 +349,32 @@
     "params_b": 32.0,
     "vram_q4": 21.3,
     "date": "2026-10-25"
+  },
+  {
+    "model_name": "Dlss 5",
+    "slug": "dlss-5-vram-requirements-calculator",
+    "title": "Dlss 5 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Dlss 5 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-26"
+  },
+  {
+    "model_name": "Gta 6",
+    "slug": "gta-6-vram-requirements-calculator",
+    "title": "Gta 6 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Gta 6 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-26"
+  },
+  {
+    "model_name": "4K 240Hz",
+    "slug": "4k-240hz-vram-requirements-calculator",
+    "title": "4K 240Hz VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run 4K 240Hz (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-26"
   }
 ]
