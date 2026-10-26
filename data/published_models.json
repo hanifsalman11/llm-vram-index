@@ -376,5 +376,32 @@
     "params_b": 32.0,
     "vram_q4": 21.3,
     "date": "2026-10-26"
+  },
+  {
+    "model_name": "Cyberpunk 2077",
+    "slug": "cyberpunk-2077-vram-requirements-calculator",
+    "title": "Cyberpunk 2077 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Cyberpunk 2077 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-26"
+  },
+  {
+    "model_name": "Dlss 4",
+    "slug": "dlss-4-vram-requirements-calculator",
+    "title": "Dlss 4 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Dlss 4 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-26"
+  },
+  {
+    "model_name": "Gta 5",
+    "slug": "gta-5-vram-requirements-calculator",
+    "title": "Gta 5 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Gta 5 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-26"
   }
 ]
