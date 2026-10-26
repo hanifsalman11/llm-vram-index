@@ -403,5 +403,32 @@
     "params_b": 32.0,
     "vram_q4": 21.3,
     "date": "2026-10-26"
+  },
+  {
+    "model_name": "All Games",
+    "slug": "all-games-vram-requirements-calculator",
+    "title": "All Games VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run All Games (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-26"
+  },
+  {
+    "model_name": "8K 60Fps",
+    "slug": "8k-60fps-vram-requirements-calculator",
+    "title": "8K 60Fps VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run 8K 60Fps (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-26"
+  },
+  {
+    "model_name": "4K Gaming",
+    "slug": "4k-gaming-vram-requirements-calculator",
+    "title": "4K Gaming VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run 4K Gaming (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-26"
   }
 ]
