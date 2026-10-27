@@ -7,6 +7,24 @@
     <atom:link href="https://hanifsalman11.github.io/llm-vram-index/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
     <item>
+      <title>Kimi K3 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/kimi-k3-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/kimi-k3-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Kimi K3 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>1440P VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/1440p-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/1440p-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run 1440P (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>Qwen 3.8 27B VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/qwen-38-27b-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/qwen-38-27b-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Qwen 3.8 27B (27.0B) in FP16 (56.2GB), Q8_0 (31.0GB), and Q4_K_M (18.2GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
       <title>4K Gaming VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
       <link>https://hanifsalman11.github.io/llm-vram-index/4k-gaming-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/4k-gaming-vram-requirements-calculator.html</guid>
@@ -167,24 +185,6 @@
       <link>https://hanifsalman11.github.io/llm-vram-index/solar-pro-22b-preview-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/solar-pro-22b-preview-vram-requirements-calculator.html</guid>
       <description>Calculate exact GPU VRAM and Unified Memory needed to run Solar Pro 22B Preview (22.0B) in FP16 (46.2GB), Q8_0 (25.6GB), and Q4_K_M (15.1GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>Yi 1.5 34B Chat VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/yi-15-34b-chat-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/yi-15-34b-chat-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run Yi 1.5 34B Chat (34.0B) in FP16 (70.2GB), Q8_0 (38.5GB), and Q4_K_M (22.6GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>StarCoder2 15B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/starcoder2-15b-instruct-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/starcoder2-15b-instruct-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run StarCoder2 15B Instruct (15.5B) in FP16 (33.2GB), Q8_0 (18.5GB), and Q4_K_M (11.1GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>Codestral 22B v0.1 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/codestral-22b-v01-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/codestral-22b-v01-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run Codestral 22B v0.1 (22.2B) in FP16 (46.6GB), Q8_0 (25.8GB), and Q4_K_M (15.3GB) with Ollama or llama.cpp.</description>
     </item>
   </channel>
 </rss>

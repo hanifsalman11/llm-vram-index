@@ -430,5 +430,32 @@
     "params_b": 32.0,
     "vram_q4": 21.3,
     "date": "2026-10-26"
+  },
+  {
+    "model_name": "Qwen 3.8 27B",
+    "slug": "qwen-38-27b-vram-requirements-calculator",
+    "title": "Qwen 3.8 27B VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Qwen 3.8 27B (27.0B) in FP16 (56.2GB), Q8_0 (31.0GB), and Q4_K_M (18.2GB) with Ollama or llama.cpp.",
+    "params_b": 27.0,
+    "vram_q4": 18.2,
+    "date": "2026-10-27"
+  },
+  {
+    "model_name": "1440P",
+    "slug": "1440p-vram-requirements-calculator",
+    "title": "1440P VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run 1440P (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-27"
+  },
+  {
+    "model_name": "Kimi K3",
+    "slug": "kimi-k3-vram-requirements-calculator",
+    "title": "Kimi K3 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Kimi K3 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-27"
   }
 ]
