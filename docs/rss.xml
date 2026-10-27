@@ -7,6 +7,24 @@
     <atom:link href="https://hanifsalman11.github.io/llm-vram-index/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
     <item>
+      <title>1440P Gaming VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/1440p-gaming-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/1440p-gaming-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run 1440P Gaming (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>27B Model VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/27b-model-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/27b-model-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run 27B Model (27.0B) in FP16 (56.2GB), Q8_0 (31.0GB), and Q4_K_M (18.2GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>Minimax H3 VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/minimax-h3-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/minimax-h3-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Minimax H3 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
       <title>Deepseek V4 Flash VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
       <link>https://hanifsalman11.github.io/llm-vram-index/deepseek-v4-flash-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/deepseek-v4-flash-vram-requirements-calculator.html</guid>
@@ -167,24 +185,6 @@
       <link>https://hanifsalman11.github.io/llm-vram-index/internvl-25-38b-multimodal-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/internvl-25-38b-multimodal-vram-requirements-calculator.html</guid>
       <description>Calculate exact GPU VRAM and Unified Memory needed to run InternVL 2.5 38B Multimodal (38.0B) in FP16 (78.2GB), Q8_0 (42.8GB), and Q4_K_M (25.1GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>WizardLM 2 8x22B MoE VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/wizardlm-2-8x22b-moe-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/wizardlm-2-8x22b-moe-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run WizardLM 2 8x22B MoE (141.0B) in FP16 (284.2GB), Q8_0 (154.1GB), and Q4_K_M (88.9GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>Hermes 3 Llama 3.1 70B VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/hermes-3-llama-31-70b-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/hermes-3-llama-31-70b-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run Hermes 3 Llama 3.1 70B (70.6B) in FP16 (143.4GB), Q8_0 (78.0GB), and Q4_K_M (45.3GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>Dolphin 2.9.4 Llama 3.1 70B VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/dolphin-294-llama-31-70b-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/dolphin-294-llama-31-70b-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run Dolphin 2.9.4 Llama 3.1 70B (70.6B) in FP16 (143.4GB), Q8_0 (78.0GB), and Q4_K_M (45.3GB) with Ollama or llama.cpp.</description>
     </item>
   </channel>
 </rss>
