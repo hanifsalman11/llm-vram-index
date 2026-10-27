@@ -457,5 +457,32 @@
     "params_b": 32.0,
     "vram_q4": 21.3,
     "date": "2026-10-27"
+  },
+  {
+    "model_name": "Qwen 3.6 27B",
+    "slug": "qwen-36-27b-vram-requirements-calculator",
+    "title": "Qwen 3.6 27B VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Qwen 3.6 27B (27.0B) in FP16 (56.2GB), Q8_0 (31.0GB), and Q4_K_M (18.2GB) with Ollama or llama.cpp.",
+    "params_b": 27.0,
+    "vram_q4": 18.2,
+    "date": "2026-10-27"
+  },
+  {
+    "model_name": "70B Model",
+    "slug": "70b-model-vram-requirements-calculator",
+    "title": "70B Model VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run 70B Model (70.0B) in FP16 (142.2GB), Q8_0 (77.4GB), and Q4_K_M (44.9GB) with Ollama or llama.cpp.",
+    "params_b": 70.0,
+    "vram_q4": 44.9,
+    "date": "2026-10-27"
+  },
+  {
+    "model_name": "Deepseek V4 Flash",
+    "slug": "deepseek-v4-flash-vram-requirements-calculator",
+    "title": "Deepseek V4 Flash VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Deepseek V4 Flash (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-27"
   }
 ]
