@@ -7,6 +7,18 @@
     <atom:link href="https://hanifsalman11.github.io/llm-vram-index/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
     <item>
+      <title>1080P Gaming VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/1080p-gaming-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/1080p-gaming-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run 1080P Gaming (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
+      <title>4K 120Fps VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/4k-120fps-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/4k-120fps-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run 4K 120Fps (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
       <title>1440P Gaming VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
       <link>https://hanifsalman11.github.io/llm-vram-index/1440p-gaming-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/1440p-gaming-vram-requirements-calculator.html</guid>
@@ -173,18 +185,6 @@
       <link>https://hanifsalman11.github.io/llm-vram-index/smollm2-17b-instruct-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/smollm2-17b-instruct-vram-requirements-calculator.html</guid>
       <description>Calculate exact GPU VRAM and Unified Memory needed to run SmolLM2 1.7B Instruct (1.7B) in FP16 (5.6GB), Q8_0 (3.6GB), and Q4_K_M (2.6GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>Marco-o1 7B Reasoning VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/marco-o1-7b-reasoning-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/marco-o1-7b-reasoning-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run Marco-o1 7B Reasoning (7.6B) in FP16 (17.4GB), Q8_0 (10.0GB), and Q4_K_M (6.2GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>InternVL 2.5 38B Multimodal VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/internvl-25-38b-multimodal-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/internvl-25-38b-multimodal-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run InternVL 2.5 38B Multimodal (38.0B) in FP16 (78.2GB), Q8_0 (42.8GB), and Q4_K_M (25.1GB) with Ollama or llama.cpp.</description>
     </item>
   </channel>
 </rss>

@@ -511,5 +511,23 @@
     "params_b": 32.0,
     "vram_q4": 21.3,
     "date": "2026-10-27"
+  },
+  {
+    "model_name": "4K 120Fps",
+    "slug": "4k-120fps-vram-requirements-calculator",
+    "title": "4K 120Fps VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run 4K 120Fps (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-28"
+  },
+  {
+    "model_name": "1080P Gaming",
+    "slug": "1080p-gaming-vram-requirements-calculator",
+    "title": "1080P Gaming VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run 1080P Gaming (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-10-28"
   }
 ]
