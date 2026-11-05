@@ -529,5 +529,14 @@
     "params_b": 32.0,
     "vram_q4": 21.3,
     "date": "2026-10-28"
+  },
+  {
+    "model_name": "Games",
+    "slug": "games-vram-requirements-calculator",
+    "title": "Games VRAM Requirements, GGUF Quantization & GPU Calculator (2026)",
+    "description": "Calculate exact GPU VRAM and Unified Memory needed to run Games (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.",
+    "params_b": 32.0,
+    "vram_q4": 21.3,
+    "date": "2026-11-05"
   }
 ]

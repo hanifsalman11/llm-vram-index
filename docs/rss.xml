@@ -7,6 +7,12 @@
     <atom:link href="https://hanifsalman11.github.io/llm-vram-index/rss.xml" rel="self" type="application/rss+xml" />
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub" />
     <item>
+      <title>Games VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
+      <link>https://hanifsalman11.github.io/llm-vram-index/games-vram-requirements-calculator.html</link>
+      <guid>https://hanifsalman11.github.io/llm-vram-index/games-vram-requirements-calculator.html</guid>
+      <description>Calculate exact GPU VRAM and Unified Memory needed to run Games (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
+    </item>
+    <item>
       <title>1080P Gaming VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
       <link>https://hanifsalman11.github.io/llm-vram-index/1080p-gaming-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/1080p-gaming-vram-requirements-calculator.html</guid>
@@ -179,12 +185,6 @@
       <link>https://hanifsalman11.github.io/llm-vram-index/system-for-windows-11-vram-requirements-calculator.html</link>
       <guid>https://hanifsalman11.github.io/llm-vram-index/system-for-windows-11-vram-requirements-calculator.html</guid>
       <description>Calculate exact GPU VRAM and Unified Memory needed to run System  For Windows 11 (32.0B) in FP16 (66.2GB), Q8_0 (36.4GB), and Q4_K_M (21.3GB) with Ollama or llama.cpp.</description>
-    </item>
-    <item>
-      <title>SmolLM2 1.7B Instruct VRAM Requirements, GGUF Quantization & GPU Calculator (2026)</title>
-      <link>https://hanifsalman11.github.io/llm-vram-index/smollm2-17b-instruct-vram-requirements-calculator.html</link>
-      <guid>https://hanifsalman11.github.io/llm-vram-index/smollm2-17b-instruct-vram-requirements-calculator.html</guid>
-      <description>Calculate exact GPU VRAM and Unified Memory needed to run SmolLM2 1.7B Instruct (1.7B) in FP16 (5.6GB), Q8_0 (3.6GB), and Q4_K_M (2.6GB) with Ollama or llama.cpp.</description>
     </item>
   </channel>
 </rss>
